@@ -56,3 +56,8 @@
   .project-next { margin-top: 35px; }
   .project-next a { font-size: 11px; }
 }
+/* A short first-person note: what the project is, or what went wrong. */
+.field-note { margin-top: 44px; padding: 22px 26px; border-left: 3px solid var(--accent); border-radius: 0 18px 18px 0; background: #ffffff08; max-width: 820px; }
+.field-note > p:last-child { margin-top: 9px; font-size: 16px; line-height: 1.6; color: var(--ink); }
+.field-note code, .product-benefits code, .overview-lede code { font: 500 .9em var(--mono); color: #ffe27a; background: #ffffff10; padding: 1px 5px; border-radius: 5px; }
+.case-intro + .field-note { margin-top: 0; margin-bottom: 44px; }
