@@ -9,15 +9,24 @@
   const darkPreference = matchMedia('(prefers-color-scheme: dark)');
   const currentTheme = () => root.dataset.theme || (darkPreference.matches ? 'dark' : 'light');
   const updateThemeLabel = () => themeButton.setAttribute('aria-label', `Switch to ${currentTheme() === 'dark' ? 'light' : 'dark'} mode`);
-  updateThemeLabel();
-  themeButton.addEventListener('click', () => {
+  const updateThemeLabelSafe = () => { if (themeButton) updateThemeLabel(); };
+  updateThemeLabelSafe();
+  if (themeButton) themeButton.addEventListener('click', () => {
     const theme = currentTheme() === 'dark' ? 'light' : 'dark';
     root.dataset.theme = theme;
     try { localStorage.setItem('theme', theme); } catch (_) {}
     updateThemeLabel();
   });
-  darkPreference.addEventListener('change', updateThemeLabel);
-  document.querySelector('#year').textContent = new Date().getFullYear();
+  darkPreference.addEventListener('change', updateThemeLabelSafe);
+  const year = document.querySelector('#year');
+  if (year) year.textContent = new Date().getFullYear();
+
+  // The opening sequence can be replayed from the hero.
+  const replay = document.querySelector('#replay-intro');
+  if (replay) {
+    replay.hidden = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    replay.addEventListener('click', () => { if (window.playIntro) { scrollTo(0, 0); window.playIntro(); } });
+  }
 
   // Animate entrances without hiding content or making it depend on JavaScript.
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -34,7 +43,7 @@
         }
       });
     }, { threshold: 0.08 });
-    document.querySelectorAll('.section-heading, .feature-card, .focus-list li, .principle, .project-row').forEach(element => entrances.observe(element));
+    document.querySelectorAll('.section-heading, .feature-card, .focus-list li, .principle, .project-row, .saga, .quest').forEach(element => entrances.observe(element));
     reducedMotion.addEventListener('change', () => {
       if (reducedMotion.matches) document.getAnimations().forEach(animation => animation.cancel());
     });

@@ -4,11 +4,12 @@ Portfolio site for Matthew Clements: Principal Solution Architect and product en
 
 Live at **https://mcclements02.github.io**. Local edits appear only in the preview until published.
 
-A static portfolio with no framework, build step, or trackers. The design uses system typography, translucent navigation, colorful product visuals, and optional entrance animations.
+A static portfolio with no framework, build step, or trackers. The look is galactic anime: deep-space background, gold energy accents, and an opening power-up sequence on the home page.
 
 ## Pages
 
-- `index.html`: four featured products, background, working principles, and contact.
+- `index.html`: the five "sagas" (what each product does, the hard parts, one war story), side quests, origin story, and contact.
+- `assets/intro.js`, `assets/intro.css`, `assets/intro/`: the opening sequence. It plays once per browser session, can be skipped with a click or Esc, is replayable from the hero button or `?intro`, and never plays for visitors who prefer reduced motion. The page works without it and without JavaScript.
 - `projects/index.html`: Sango Sports Lab, Socks. | Sockster, offEarth, and cAIrn, with category and technology search.
 - `projects/{sango,socks,offearth,cairn}/index.html`: concise product overviews, role summaries, screenshots or brand artwork, and underlying technology families.
 - `projects/scks/index.html`: compatibility redirect to the renamed Socks. | Sockster page.
