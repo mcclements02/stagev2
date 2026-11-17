@@ -38,7 +38,7 @@
     } catch (e) {}
   })();
 </script>
-<link href="assets/site.css?v=20261116-eyes" rel="stylesheet"/>
+<link href="assets/site.css?v=20261116-voice" rel="stylesheet"/>
 <link href="assets/intro.css?v=20261116-eyes" rel="stylesheet"/>
 <noscript><style>html.intro-pending::before{display:none}</style></noscript>
 <script defer="" src="assets/site.js?v=20261116-eyes"></script>
@@ -51,9 +51,9 @@
 <a aria-label="Matthew Clements — home" class="brand" href="./index.html"><span aria-hidden="true" class="brand-mark">mc</span><span>Matthew Clements</span></a>
 <div class="nav-right">
 <nav aria-label="Main navigation" class="nav-links">
-<a href="#sagas">The sagas</a>
-<a href="#sidequests">Side quests</a>
-<a class="nav-about" href="#origin">Origin</a>
+<a href="#work">The work</a>
+<a href="#side">Side projects</a>
+<a class="nav-about" href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 </div>
@@ -63,16 +63,16 @@
 <main id="main">
 <section aria-labelledby="intro-title" class="wrap hero-galaxy">
 <div class="hero-text">
-<p class="hero-eyebrow"><span aria-hidden="true" class="availability-dot"></span> Matthew Clements · builder of things that ship</p>
+<p class="hero-eyebrow"><span aria-hidden="true" class="availability-dot"></span> Matthew Clements · I build things and ship them</p>
 <h1 id="intro-title">I build <span>worlds.</span></h1>
-<p class="intro">A sports lab that reads your body from a phone video. A laundry marketplace that moves real money. An AI that works with the Wi-Fi off. A trail marker for AI agents. And an entire city you can drive through.</p>
-<p class="intro intro-small">One person. Design, code, infrastructure, App Store, 2 a.m. bug hunts. All of it.</p>
+<p class="intro">I built a sports lab that reads your body from a phone video. A laundry marketplace that moves real money. An AI that works with the Wi-Fi off. A rule that stops AI agents wrecking each other's work. And a city you can drive through.</p>
+<p class="intro intro-small">I design it, write it, ship it, and fix it at 2 a.m. when it breaks.</p>
 <div class="hero-actions">
-<a class="button button-primary" href="#sagas">Enter the sagas <span aria-hidden="true">↓</span></a>
+<a class="button button-primary" href="#work">See the work <span aria-hidden="true">↓</span></a>
 <button class="button button-secondary" id="replay-intro" type="button" hidden>Replay the intro <span aria-hidden="true">⚡</span></button>
 </div>
 <ul class="hero-tally" aria-label="At a glance">
-<li><b>5</b><span>worlds built</span></li>
+<li><b>5</b><span>things built</span></li>
 <li><b>2</b><span>live on the App Store</span></li>
 <li><b>1</b><span>open source</span></li>
 <li><b>1</b><span>whole city</span></li>
@@ -84,98 +84,97 @@
 </div>
 </section>
 
-<section aria-labelledby="sagas-title" class="wrap section" id="sagas">
+<section aria-labelledby="work-title" class="wrap section" id="work">
 <div class="section-heading">
 <div>
 <p class="eyebrow">What I built</p>
-<h2 id="sagas-title">The <span class="gradient-text">sagas.</span></h2>
+<h2 id="work-title">The <span class="gradient-text">work.</span></h2>
 </div>
-<p class="section-note">Five products. For each one: what it does, the parts that were hard, and the boss fight that nearly won.</p>
+<p class="section-note">Five things I built. For each one: what it does, the parts that were hard, and the bug that nearly beat me.</p>
 </div>
 
 <article class="saga saga-sango" id="sango">
-<a class="saga-art" href="projects/sango/index.html" aria-label="Sango Sports Lab product page">
+<a class="saga-art" href="projects/sango/index.html" aria-label="Sango Sports Lab project page">
 <img alt="Sango performance report on an iPhone" height="1212" loading="lazy" src="assets/sango-report.webp" width="560"/>
 <img alt="Sango development track showing a score of 77" height="1212" loading="lazy" src="assets/sango-runway.webp" width="560"/>
 </a>
 <div class="saga-body">
-<p class="saga-no"><span>Saga 01</span> Sports × AI <span class="pill live">Live on the App Store</span></p>
+<p class="saga-no"><span>01</span> Sports × AI <span class="pill live">Live on the App Store</span></p>
 <h3>Sango Sports Lab</h3>
-<p class="saga-hook">One rep on a phone camera in. A scouting report out.</p>
-<p>Film a jump, a sprint, a swing or a throw. Sango tracks 17 joints right on the phone, measures the movement, and hands back a graded report with drills for the next session.</p>
+<p class="saga-hook">Film one rep. Get told the truth about it.</p>
+<p>You film a jump, a sprint, a swing or a throw. Sango tracks 17 joints right on the phone, measures the movement, and hands back a graded report with drills for next time. I built all of it: the iOS app, the coach portal, the cloud functions and the billing.</p>
 <ul class="feats">
-<li><b>The AI doesn't get to guess.</b> Motion is measured on the device before any language model sees it. The model explains the numbers. It can't overrule them.</li>
-<li><b>What a phone can't see stays blank.</b> Every sport carries a list of things one camera can't judge. Those come back empty instead of invented.</li>
-<li><b>Two engines, one answer.</b> The scoring engine exists twice, in Swift on the phone and TypeScript in the cloud. A test suite holds them to the same result.</li>
-<li><b>No boilerplate reports.</b> A report that reads like it could be about anyone gets rejected and written again.</li>
+<li><b>I don't let the AI guess.</b> I measure the motion on the device before any language model sees it. The model explains the numbers. It can't overrule them.</li>
+<li><b>What a phone can't see, I leave blank.</b> I gave every sport a list of things one camera can't judge. Those come back empty instead of invented.</li>
+<li><b>I wrote the scoring engine twice.</b> Once in Swift for the phone, once in TypeScript for the cloud. A test suite holds them to the same answer.</li>
+<li><b>I reject boilerplate.</b> If a report reads like it could be about anyone, it gets thrown out and written again.</li>
 </ul>
-<div class="boss"><span>Boss fight</span><p>The AI coach started giving every athlete the exact same answer. The model was spending almost its whole word budget thinking, leaving about 20 tokens to actually speak. One limit raised, coach cured.</p></div>
-<ul class="stats"><li><b>16</b> sports</li><li><b>17</b> joints tracked</li><li><b>6</b> performance pillars</li><li><b>iOS</b> + web coach portal</li></ul>
-<div class="saga-links"><a class="button button-primary" href="https://apps.apple.com/us/app/sango-sports-lab/id6760807570" rel="noopener" target="_blank">App Store ↗</a><a class="button button-secondary" href="https://sangosportslab.com" rel="noopener" target="_blank">sangosportslab.com ↗</a><a href="projects/sango/index.html">Product page →</a></div>
+<div class="boss"><span>What went wrong</span><p>My AI coach started giving every athlete the same answer, word for word. The model was spending nearly its whole budget thinking and had about 20 tokens left to talk. I raised one limit and it started coaching again.</p></div>
+<ul class="stats"><li><b>16</b> sports</li><li><b>17</b> joints tracked</li><li><b>6</b> things scored</li><li><b>iOS</b> + web coach portal</li></ul>
+<div class="saga-links"><a class="button button-primary" href="https://apps.apple.com/us/app/sango-sports-lab/id6760807570" rel="noopener" target="_blank">App Store ↗</a><a class="button button-secondary" href="https://sangosportslab.com" rel="noopener" target="_blank">sangosportslab.com ↗</a><a href="projects/sango/index.html">Read more →</a></div>
 </div>
 </article>
 
 <article class="saga saga-socks flip" id="socks">
-<a class="saga-art" href="projects/socks/index.html" aria-label="Socks. and Sockster product page">
+<a class="saga-art" href="projects/socks/index.html" aria-label="Socks. and Sockster project page">
 <img alt="Socks. customer app for laundry pickup and delivery" height="1212" loading="lazy" src="assets/scks-customer.webp" width="560"/>
 <img alt="Sockster partner app" height="1212" loading="lazy" src="assets/scks-driver.webp" width="560"/>
 </a>
 <div class="saga-body">
-<p class="saga-no"><span>Saga 02</span> Marketplace <span class="pill live">In production</span></p>
+<p class="saga-no"><span>02</span> Marketplace <span class="pill live">In production</span></p>
 <h3>Socks. <i>|</i> Sockster</h3>
 <p class="saga-hook">Laundry, dispatched like a ride.</p>
-<p>A customer orders a pickup. The request goes out to nearby Socksters, independent drivers who wash, fold and deliver. First to accept gets the job. Two apps, one backend, real money on the line.</p>
+<p>A customer orders a pickup. The request goes out to nearby Socksters, independent drivers who wash, fold and deliver. First to accept gets the job. I wrote the backend from its first commit and have led both apps since 2026.</p>
 <ul class="feats">
-<li><b>First tap wins, exactly once.</b> Two drivers can hit Accept in the same instant. Only one of them gets the order.</li>
-<li><b>A search that widens itself.</b> Nobody close by? The broadcast grows ring by ring, and the customer signs off before a longer trip costs more.</li>
-<li><b>Money that can't be paid twice.</b> A retry or a dropped connection never double-charges a customer or double-pays a driver.</li>
-<li><b>One shared vocabulary.</b> Both apps import the same order statuses, after they drifted apart and the driver app labelled laundry already in the car “Ready for pickup.”</li>
+<li><b>First tap wins, exactly once.</b> Two drivers can hit Accept in the same instant. I made sure only one of them gets the order.</li>
+<li><b>The search widens itself.</b> If nobody is close, I grow the broadcast ring by ring, and the customer signs off before a longer trip costs more.</li>
+<li><b>Nobody gets paid twice.</b> A retry or a dropped connection can't double-charge a customer or double-pay a driver.</li>
+<li><b>One list of statuses.</b> I made both apps import the same order statuses after they drifted apart and the driver app labelled laundry already in the car “Ready for pickup.”</li>
 </ul>
-<div class="boss"><span>Boss fight</span><p>A short-range search and a long-range search were returning almost the same drivers. A library setting defaulted to loose matching, so a customer could be asked to pay to widen a search that was already as wide as it got. Found, fixed, and the refund path with it.</p></div>
+<div class="boss"><span>What went wrong</span><p>My short-range search and my long-range search were returning almost the same drivers. A library setting defaulted to loose matching, so a customer could be asked to pay to widen a search that was already as wide as it got. I fixed the setting, and the refund path with it.</p></div>
 <ul class="stats"><li><b>2</b> apps, 1 backend</li><li><b>Flutter</b> + Firebase</li><li><b>Stripe</b> Connect payouts</li><li><b>Seattle</b> area</li></ul>
-<p class="saga-role">My part: I wrote the backend from its first commit and have led both apps since 2026.</p>
-<div class="saga-links"><a href="projects/socks/index.html">Product page →</a></div>
+<div class="saga-links"><a href="projects/socks/index.html">Read more →</a></div>
 </div>
 </article>
 
 <article class="saga saga-offearth" id="offearth">
-<a class="saga-art" href="projects/offearth/index.html" aria-label="offEarth product page">
+<a class="saga-art" href="projects/offearth/index.html" aria-label="offEarth project page">
 <img alt="offEarth globe with a purple orbit" class="art-logo" height="768" loading="lazy" src="assets/offearth-logo.png" width="768"/>
 </a>
 <div class="saga-body">
-<p class="saga-no"><span>Saga 03</span> Private AI <span class="pill use">In daily use</span></p>
+<p class="saga-no"><span>03</span> Private AI <span class="pill use">In daily use</span></p>
 <h3>offEarth</h3>
 <p class="saga-hook">An AI that works with the Wi-Fi off. On purpose.</p>
-<p>A chat model running entirely on your iPhone. No account, no server, nothing leaving the device. After the first download it works on a plane, in a tunnel, or anywhere else the internet isn't.</p>
+<p>I put a chat model entirely on the iPhone. No account, no server, nothing leaving the device. After the first download it works on a plane, in a tunnel, or anywhere else the internet isn't.</p>
 <ul class="feats">
-<li><b>It sizes up your phone first.</b> offEarth reads the device's memory and recommends the biggest model that will run cleanly, from 1.1 GB up to 4.7 GB.</li>
-<li><b>A governor on the engine.</b> It watches memory, heat and battery mode while you chat, and trims the model's working memory before iOS would shut the app down.</li>
-<li><b>A browser whose AI can't phone home.</b> The companion Mac browser, written in Rust, has an assistant that only accepts a local address. Its network code is compiled without the ability to reach the public internet at all.</li>
+<li><b>It sizes up your phone first.</b> I read the device's memory and recommend the biggest model that will run cleanly, from 1.1 GB up to 4.7 GB.</li>
+<li><b>I put a governor on it.</b> It watches memory, heat and battery mode while you chat, and trims the model's working memory before iOS would kill the app.</li>
+<li><b>I built a browser whose AI can't phone home.</b> The companion Mac browser is written in Rust. Its assistant only accepts a local address, and I compiled its network code without the ability to reach the public internet at all.</li>
 </ul>
-<div class="boss"><span>Boss fight</span><p>A model download failed quietly and saved a 15-byte error message as a 4.7 GB brain. Tap send: white screen. Now every model file has to prove what it is before it's allowed to load.</p></div>
+<div class="boss"><span>What went wrong</span><p>A model download failed quietly, and I saved a 15-byte error message as a 4.7 GB model. Tap send: white screen. Now every model file has to prove what it is before I load it.</p></div>
 <ul class="stats"><li><b>0</b> servers</li><li><b>0</b> accounts</li><li><b>3</b> model sizes</li><li><b>Swift</b> · llama.cpp · Rust</li></ul>
-<div class="saga-links"><a href="projects/offearth/index.html">Product page →</a></div>
+<div class="saga-links"><a href="projects/offearth/index.html">Read more →</a></div>
 </div>
 </article>
 
 <article class="saga saga-cairn flip" id="cairn">
-<a class="saga-art" href="projects/cairn/index.html" aria-label="cAIrn product page">
+<a class="saga-art" href="projects/cairn/index.html" aria-label="cAIrn project page">
 <img alt="cAIrn logo: four blue and violet stones stacked into a trail marker" class="art-logo" height="256" loading="lazy" src="assets/cairn-logo.svg" width="256"/>
 </a>
 <div class="saga-body">
-<p class="saga-no"><span>Saga 04</span> Agent collaboration <span class="pill">Open source · MIT</span></p>
+<p class="saga-no"><span>04</span> Agent collaboration <span class="pill">Open source · MIT</span></p>
 <h3>c<em>AI</em>rn</h3>
 <p class="saga-hook">A trail marker for AI agents.</p>
-<p>Put three AI coding agents on one repo and they will redo, overwrite and strand each other's work. cAIrn is one rule and one command: every commit that touches code also adds a line to a shared ledger. The next agent reads the trail before it starts walking.</p>
+<p>Put three AI coding agents on one repo and they will redo, overwrite and strand each other's work. I wrote one rule and one command to stop that: every commit that touches code also adds a line to a shared ledger. The next agent reads the trail before it starts walking.</p>
 <ul class="feats">
-<li><b>Built to merge.</b> One row per branch and an append-only log. If two agents collide, the conflict is the signal: keep both entries.</li>
-<li><b>Enforced where it counts.</b> A local hook reminds. The pull-request check decides. From the README: “<code>--no-verify</code> exists and agents will find it.”</li>
-<li><b>No vendor, no model.</b> One Bash script. Works with any agent from any lab, on macOS, Linux and Windows.</li>
-<li><b>Extracted, not invented.</b> It's the protocol that was already running across 13 of my private repos.</li>
+<li><b>I built it to merge.</b> One row per branch and an append-only log. If two agents collide, the conflict is the signal: keep both entries.</li>
+<li><b>I enforce it where it counts.</b> A local hook reminds. The pull-request check decides. As I put it in the README: “<code>--no-verify</code> exists and agents will find it.”</li>
+<li><b>No vendor, no model.</b> It's one Bash script. It works with any agent from any lab, on macOS, Linux and Windows.</li>
+<li><b>I didn't invent it. I extracted it.</b> It's the protocol I was already running across 13 of my private repos.</li>
 </ul>
-<div class="boss"><span>Boss fight</span><p>On a Mac, asking “does <code>Scripts/</code> exist?” says yes even when the folder is really <code>scripts/</code>. The installer rewrote files on every run until it learned to ask git which spelling was real.</p></div>
+<div class="boss"><span>What went wrong</span><p>On a Mac, asking “does <code>Scripts/</code> exist?” says yes even when the folder is really <code>scripts/</code>. My installer rewrote files on every run until I taught it to ask git which spelling was real.</p></div>
 <blockquote class="saga-quote">You add one stone. You don't rearrange the others.</blockquote>
-<div class="saga-links"><a class="button button-primary" href="https://github.com/mcclements02/cairn" rel="noopener" target="_blank">GitHub ↗</a><a href="projects/cairn/index.html">Product page →</a></div>
+<div class="saga-links"><a class="button button-primary" href="https://github.com/mcclements02/cairn" rel="noopener" target="_blank">GitHub ↗</a><a href="projects/cairn/index.html">Read more →</a></div>
 </div>
 </article>
 
@@ -184,50 +183,50 @@
 <img alt="The Connected Sprawl cover: Zarri in a white hoodie on a city street at golden hour" height="1536" loading="lazy" src="assets/connectedsprawl-cover.jpg" width="1024"/>
 </a>
 <div class="saga-body">
-<p class="saga-no"><span>Saga 05</span> Open-world game <span class="pill build">Playable on Mac</span></p>
+<p class="saga-no"><span>05</span> Open-world game <span class="pill build">Playable on Mac</span></p>
 <h3>The Connected Sprawl</h3>
 <p class="saga-hook">A whole city. Twenty-eight days of runway.</p>
-<p>An open-world driving game where the real enemy is your burn rate. You're Zarri, a 20-year-old founder with a car, a laptop and 28 days of cash. Every mission is a choice: go Corporate for stability, or Street for fast money and heat. Built in Unreal Engine 5.</p>
+<p>I'm building an open-world driving game where the real enemy is your burn rate. You play Zarri, a 20-year-old founder with a car, a laptop and 28 days of cash. Every mission is a choice: go Corporate for stability, or Street for fast money and heat. It runs on Unreal Engine 5.</p>
 <ul class="feats">
-<li><b>Simulated, not painted.</b> Traffic lights and AI drivers read the same clock, so a light can never show green while the cars believe it's red. New traffic only ever drives out of a parking garage. Nothing pops into existence on a street.</li>
-<li><b>AI agents play it to break it.</b> Agents drive the game through its own cameras. Every bug has to be caught failing by a test before anyone is allowed to fix it.</li>
-<li><b>3,151 cameras on the world.</b> A camera dictionary re-photographs the city so regressions show up as pictures, not as surprises.</li>
-<li><b>Every screenshot is evidence.</b> The version is printed on the HUD, and every version maps to an entry in the build ledger.</li>
+<li><b>I simulate it. I don't paint it.</b> Traffic lights and AI drivers read the same clock, so a light can never show green while the cars believe it's red. New traffic only ever drives out of a parking garage. Nothing pops into existence on a street.</li>
+<li><b>I have AI agents play it to break it.</b> They drive the game through its own cameras. Every bug has to be caught failing by a test before anyone is allowed to fix it.</li>
+<li><b>I pointed 3,151 cameras at it.</b> A camera dictionary re-photographs the city, so regressions show up as pictures, not as surprises.</li>
+<li><b>Every screenshot is evidence.</b> I print the version on the HUD, and every version maps to an entry in the build ledger.</li>
 </ul>
-<div class="boss"><span>Boss fight</span><p>A review found the game could be won in about 32 seconds: the first investor cheque was bigger than the win condition. Also on the fixed list: a car that fell out of the sky, and a map pin 27 metres out in the lake.</p></div>
+<div class="boss"><span>What went wrong</span><p>A review found my game could be won in about 32 seconds: the first investor cheque was bigger than the win condition. Also on my fixed list: a car that fell out of the sky, and a map pin 27 metres out in the lake.</p></div>
 <ul class="stats"><li><b>~196k</b> lines of C++</li><li><b>600+</b> automated tests</li><li><b>9</b> story missions</li><li><b>9</b> buildings you can walk into</li></ul>
 <div class="saga-links"><a class="button button-primary" href="projects/connectedsprawl/index.html">Download for Mac ↓</a></div>
 </div>
 </article>
 </section>
 
-<section aria-labelledby="side-title" class="wrap section" id="sidequests">
+<section aria-labelledby="side-title" class="wrap section" id="side">
 <div class="section-heading">
 <div>
-<p class="eyebrow">Also in the lab</p>
-<h2 id="side-title">Side <span class="gradient-text">quests.</span></h2>
+<p class="eyebrow">Also mine</p>
+<h2 id="side-title">Side <span class="gradient-text">projects.</span></h2>
 </div>
-<p class="section-note">Smaller builds, experiments, and things that got out of hand.</p>
+<p class="section-note">Smaller things I built, tried, or let get out of hand.</p>
 </div>
 <div class="quests">
-<article class="quest"><p class="quest-tag">Mac app</p><h3>Patch Quorum</h3><p>One model writes. The quorum reviews. Puts one AI in the writing seat and the rest on read-only review, using each lab's own command-line tool.</p></article>
-<article class="quest"><p class="quest-tag">Web tool</p><h3>AbleScan</h3><p>An accessibility scanner where every scan runs on its own short-lived, locked-down machine that can only see the site it was sent to check.</p></article>
-<article class="quest"><p class="quest-tag">Platform</p><h3>LaunchD It!</h3><p>An eight-week founder sprint. Ship one real thing a week and get AI feedback against a rubric, or a human instructor's review.</p></article>
-<article class="quest"><p class="quest-tag">Trading agent</p><h3>Xentrix</h3><p>An options-trading agent with its own pricing math, volatility filters, and a risk engine that is allowed to say no.</p></article>
-<article class="quest"><p class="quest-tag">Merch pipeline</p><h3>Angry Cordero Studio</h3><p>From blank garment to storefront draft: mockups, live supplier prices, margin math, then straight into Shopify.</p></article>
-<article class="quest"><p class="quest-tag">Animated pilot</p><h3>Journey of the Gods</h3><p>A seven-scene series pilot adapted from a book, with stills, dialogue and video directed through an AI production pipeline.</p></article>
-<article class="quest"><p class="quest-tag">Novel</p><h3>The Shadow Sorcerers</h3><p>A 42,000-word fantasy novel in six parts. Naturally, it has a build script.</p></article>
+<article class="quest"><p class="quest-tag">Mac app</p><h3>Patch Quorum</h3><p>I put one AI in the writing seat and the rest on read-only review, each through its own lab's command-line tool.</p></article>
+<article class="quest"><p class="quest-tag">Web tool</p><h3>AbleScan</h3><p>My accessibility scanner. Every scan runs on its own short-lived, locked-down machine that can only see the site it was sent to check.</p></article>
+<article class="quest"><p class="quest-tag">Platform</p><h3>LaunchD It!</h3><p>An eight-week founder sprint I built. You ship one real thing a week and get AI feedback against a rubric, or a human instructor's review.</p></article>
+<article class="quest"><p class="quest-tag">Trading agent</p><h3>Xentrix</h3><p>My options-trading agent. It has its own pricing math, volatility filters, and a risk engine that's allowed to tell me no.</p></article>
+<article class="quest"><p class="quest-tag">Merch pipeline</p><h3>Angry Cordero Studio</h3><p>I take a blank garment to a storefront draft: mockups, live supplier prices, margin math, then straight into Shopify.</p></article>
+<article class="quest"><p class="quest-tag">Animated pilot</p><h3>Journey of the Gods</h3><p>A seven-scene series pilot I adapted from a book and directed through an AI production pipeline: stills, dialogue and video.</p></article>
+<article class="quest"><p class="quest-tag">Novel</p><h3>The Shadow Sorcerers</h3><p>I wrote a 42,000-word fantasy novel in six parts. Naturally, it has a build script.</p></article>
 </div>
 </section>
 
-<section aria-labelledby="origin-title" class="wrap section origin" id="origin">
+<section aria-labelledby="about-title" class="wrap section origin" id="about">
 <div>
-<p class="eyebrow">Origin story</p>
-<h2 id="origin-title">Trained on <span class="gradient-text">heavy gravity.</span></h2>
+<p class="eyebrow">Where I come from</p>
+<h2 id="about-title">Trained on <span class="gradient-text">heavy gravity.</span></h2>
 </div>
 <div>
-<p>Fourteen years of national-scale telecom and cloud at <strong>AT&amp;T</strong>, <strong>Oracle</strong> and <strong>IBM</strong>, where a bad release reaches millions of people and “it works on my machine” isn't a sentence anyone finishes.</p>
-<p>Now I run <strong>Sango Labs</strong> out of Bothell, Washington, and bring that weight to small products: I design the experience, write the code, build the infrastructure, and keep it running.</p>
+<p>I spent fourteen years on national-scale telecom and cloud at <strong>AT&amp;T</strong>, <strong>Oracle</strong> and <strong>IBM</strong>, where a bad release reaches millions of people and “it works on my machine” isn't a sentence anyone finishes.</p>
+<p>Now I run <strong>Sango Labs</strong> out of Bothell, Washington, and bring that weight to small products. I design the experience, write the code, build the infrastructure, and keep it running.</p>
 <p>What pulls me in is the spot where AI meets the physical world: a body in motion, a phone with limited memory, a driver who needs to get paid.</p>
 </div>
 </section>
@@ -235,8 +234,8 @@
 <section aria-labelledby="contact-title" class="wrap-contact" id="contact">
 <div class="wrap"><div class="contact">
 <div>
-<p class="eyebrow">Next saga</p>
-<h2 id="contact-title">Got a world<br/>worth building?</h2>
+<p class="eyebrow">Get in touch</p>
+<h2 id="contact-title">Got something<br/>worth building?</h2>
 </div>
 <div>
 <p>I'm interested in forward-deployed engineering, AI solutions architecture, and products with a real problem to solve.</p>
