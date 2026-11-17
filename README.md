@@ -8,7 +8,7 @@ A static portfolio with no framework, build step, or trackers. The look is galac
 
 ## Pages
 
-- `index.html`: the five "sagas" (what each product does, the hard parts, one war story), side quests, origin story, and contact.
+- `index.html`: the five main projects in first person (what each does, the hard parts, what went wrong), side projects, about, and contact.
 - `assets/intro.js`, `assets/intro.css`, `assets/intro/`: the opening sequence. It plays once per browser session, can be skipped with a click or Esc, is replayable from the hero button or `?intro`, and never plays for visitors who prefer reduced motion. The page works without it and without JavaScript.
 - `projects/index.html`: Sango Sports Lab, Socks. | Sockster, offEarth, and cAIrn, with category and technology search.
 - `projects/{sango,socks,offearth,cairn}/index.html`: concise product overviews, role summaries, screenshots or brand artwork, and underlying technology families.

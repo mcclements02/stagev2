@@ -580,3 +580,6 @@ main:not(.wrap) .contact { margin-block: 110px 65px; }
   .nav-links { gap: 18px; }
   .nav-links a:last-child { background: none; color: var(--accent); font-weight: 500; }
 }
+
+/* The hero aura is wider than the page at some widths; stop it adding a sideways scroll. */
+body.home { overflow-x: clip; }
